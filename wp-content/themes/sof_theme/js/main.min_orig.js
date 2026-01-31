@@ -1,0 +1,287 @@
+(function($){
+  $(window).on("load",function(){
+    var winWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if(winWidth>1910){
+      $(".mCustomScrollbar").mCustomScrollbar("destroy");
+    }else{
+      $(".mCustomScrollbar").mCustomScrollbar({
+        axis:'x',
+        advanced:{autoExpandHorizontalScroll:true},
+      });
+  }
+  });
+})(jQuery);
+
+$(document).ready(function(){
+
+  
+
+    //personal area switch
+    $(".all-links > h4").bind("click", function(){
+      // $('h4').stopPropagation();
+      $(this).parent().parent().find(".all-blocks").removeClass().addClass("all-blocks");
+      var $thisClass = $(this).attr("class");
+      var $some = $(this).parent().parent().find(".all-blocks").addClass($thisClass + "-show");
+      if($(this).hasClass('active')){
+        $('h4').removeClass('active');
+        $(this).parent().parent().find(".all-blocks").removeClass().addClass("all-blocks");
+      var $thisClass = $(this).attr("class");
+      var $some = $(this).parent().parent().find(".all-blocks").addClass($thisClass + "-show");
+      $(this).addClass('active');
+      }
+      $('h4').removeClass('active');
+      $(this).addClass('active');
+      });
+
+      //look password 
+      $(".look-pas").bind("click", function(){
+        var $someInp = $(this).parent().find('.for-look-pas').prop('type'); 
+        if($someInp == 'password'){
+          $(this).parent().find('.for-look-pas').attr('type','text')
+        }
+        else {
+          $(this).parent().find('.for-look-pas').attr('type','password')
+        }
+      });
+
+      $(".plus-address").bind("click", function(){
+        $('.more-addres').css('display','block');
+      });
+
+
+      //Pop-up
+  $(".close-oneOfPopUp").bind("click", function(){
+    $('.oneOfPopUp').css('display','none');
+    $('.bg-black').css('display','none');
+  });
+  $(".bg-black").bind("click", function(){
+    $('.oneOfPopUp').css('display','none');
+    $('.bg-black').css('display','none');
+  });
+  $(".buy-one-click").bind("click", function(){
+    $('.pop-up-attention').css('display','block');
+    $('.bg-black').css('display','block');
+  });
+  $(".open-sale-popUp").bind("click", function(){
+    $('.pop-up-sale').css('display','block');
+    $('.bg-black').css('display','block');
+  });
+  $(".open-popUpLogin").bind("click", function(){
+    $('.popUpLogin').css('display','block');
+    $('.bg-black').css('display','block');
+  });
+  $(".open-productsBasket").bind("click", function(){
+    $('.productsBasket').css('display','block');
+    $('.bg-black').css('display','block');
+  });
+
+  $(".open-register").bind("click", function(){
+    $('.popUp-registration').css('display','block');
+    $('.bg-black').css('display','block');
+  });
+
+  $(".close-thank-sale").bind("click", function(){
+    $('.oneOfPopUp').css('display','none');
+    $('.bg-black').css('display','none');
+  });
+
+  $(".open-oneOfPopUp").bind("click", function(){
+    $('.pop-up-sale').css('display','none');
+    $('.pop-up-post-sale').css('display','block');
+    $('.bg-black').css('display','block');
+  });
+
+  $(".open-login").bind("click", function(){
+    $('.popUp-registration').css('display','none');
+    $('.bg-black').css('display','none');
+    $('.popUpLogin').css('display','block');
+    $('.bg-black').css('display','block');
+  });
+
+  $(".phis").bind("click", function(){
+    $('.entity').removeClass('active-reg');
+    $(this).addClass('active-reg');
+    $('.phis-form').css('display','none');
+    $('.entity-form').css('display','block');
+    $('.popUp-registration').css('height','630px');
+  });
+  $(".entity").bind("click", function(){
+    $('.phis').removeClass('active-reg');
+    $(this).addClass('active-reg');
+    $('.phis-form').css('display','block');
+    $('.entity-form').css('display','none');
+    $('.popUp-registration').css('height','800px');
+  });
+
+    //Open popup about Politic 
+    $(".open-pop-Up").bind("click", function(){
+    $('.pop-up').css('display', 'block');
+    $('.bg-black').css('display','block');
+  })
+
+  //Slick
+    $('.all-some-sale').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        arrows: true,
+        dots: true,
+      });
+      $('.all-review').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 1,
+        centerMode: true,
+        autoplay: false,
+        arrows: true,
+        prevArrow:"<div class='slick-prev pull-left'>&lsaquo;</div>",
+        nextArrow:"<div class='slick-next pull-right'>&rsaquo;</div>",
+        dots: false,
+        responsive:[
+          {
+           breakpoint: 1200,
+           settings: {
+            slidesToShow: 2,
+            arrows: false,
+           }
+         },
+         {
+          breakpoint: 768,
+          settings: {
+           slidesToShow: 1,
+           centerMode: false,
+           arrows: false,
+          }
+        },
+        ]
+      });
+
+      
+    //Drop-category on filter
+    $(".headline-category").bind("click", function(){
+      $(this).parent().toggleClass('drop-category');
+    });
+
+
+    //Select-menu
+    $('#mark-of-car').ddslick();
+    $('#model').ddslick();
+    $('#year').ddslick();
+    $('#litr').ddslick();
+    $('#location').ddslick();
+    $('#price').ddslick();
+    $('#pickup').ddslick();
+    $('#result-basket').ddslick();
+
+
+
+    //Open filter on mobile
+  $(".mobile-filter").bind("click", function(){
+      $('.all-filter').toggleClass('filter-mobile')
+  });
+  $(".close-filter").bind("click", function(){
+      $('.all-filter').removeClass('filter-mobile');
+  });
+    
+  //Count of product on the catalog-list
+  $(".quantity-arrow-minus").bind("click", function(){
+    var $quantityNum = $(this).parent().parent().find(".quantity-num");
+      if ($quantityNum.val() > 1){
+        $quantityNum.val(+$quantityNum.val() - 1);
+      }
+    });
+    $(".quantity-arrow-plus").bind("click", function(){
+    var $quantityNum = $(this).parent().parent().find(".quantity-num");
+        $quantityNum.val(+$quantityNum.val() + 1);
+    });
+
+
+      //Change view catalog list/table
+      $(".black-list").bind("click", function(){
+        $(this).parent().find('.red-list').css('display', 'inline-block');
+        $(this).parent().parent().find('.red-table').css('display', 'none');
+        $(this).parent().parent().find('.black-table').css('display', 'inline-block');
+        $(this).parent().parent().parent().find('.main-catalog-list').css('display', 'flex');
+        $(this).parent().parent().parent().find('.main-catalog-table').css('display', 'none');
+        $(this).css('display', 'none');
+      });
+
+
+      $(".black-table").bind("click", function(){
+        $(this).parent().find('.red-table').css('display', 'inline-block');
+        $(this).parent().parent().find('.red-list').css('display', 'none');
+        $(this).parent().parent().find('.black-list').css('display', 'inline-block');
+        $(this).parent().parent().parent().find('.main-catalog-list').css('display', 'none');
+        $(this).parent().parent().parent().find('.main-catalog-table').css('display', 'flex');
+        $(this).css('display', 'none');
+      });
+
+
+    //Delete from basket
+    $(".delete").bind("click", function(){
+      $(this).parent().remove();
+    });
+
+
+    //Steps in basket
+    var $self = $('#self')
+
+    $("#next-first-step").bind("click", function(){
+      $(this).parent().parent().parent().parent().find('.first').removeClass('active');
+      $(this).parent().parent().parent().parent().find('.second').addClass('active');
+      if($self.prop('checked') == true) {
+        $(this).parent().parent().parent().parent().find('.pickup-step').css('display', 'block')
+        $(this).parent().parent().parent().parent().find('.first-step').css('display', 'none');
+      }
+      else{
+        $(this).parent().parent().parent().parent().find('.courier-step').css('display', 'block')
+        $(this).parent().parent().parent().parent().find('.first-step').css('display', 'none');
+      }
+    });
+
+
+    $(".back-to-first").bind("click", function(){
+      $('.second').removeClass('active');
+      $('.first').addClass('active');
+      $('.second-step').css('display', 'none')
+      $('.first-step').css('display', 'block')
+    });
+
+    $(".next-second-step").bind("click", function(){
+        var s = '';
+        var surname1 = document.getElementById('surname1').value;
+        var name1 = document.getElementById('name1').value;
+        var phone1 = document.getElementById('phone1').value;
+        var email1 = document.getElementById('email1').value;
+            if(surname1 === s || name1 === s || phone1 === s || email1 === s){
+              alert('Заполните пожалуйста все поля');
+            }
+            else {
+               $('.second').removeClass('active');
+              $('.third').addClass('active');
+              $('.second-step').css('display', 'none')
+              $('.third-step').css('display', 'block')
+            }
+    });
+    $(".next-second-step1").bind("click", function(){
+        var s = '';
+        var surname = document.getElementById('surname').value;
+        var name = document.getElementById('name').value;
+        var phone = document.getElementById('phone').value;
+        var email = document.getElementById('email').value;
+            if(surname === s || name === s || phone === s || email === s){
+              alert('Заполните пожалуйста все поля');
+            }
+            else {
+               $('.second').removeClass('active');
+              $('.third').addClass('active');
+              $('.second-step').css('display', 'none')
+              $('.third-step').css('display', 'block')
+            }
+    });
+
+   
+});

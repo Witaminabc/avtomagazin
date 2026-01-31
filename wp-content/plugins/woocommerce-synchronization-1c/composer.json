@@ -1,0 +1,22 @@
+{
+  "name": "woocommerce-synchronization-1c",
+  "autoload": {
+    "psr-4": {
+      "Itgalaxy\\Wc\\Exchange1c\\Admin\\": "admin/",
+      "Itgalaxy\\Wc\\Exchange1c\\ExchangeProcess\\": "exchange-process/",
+      "Itgalaxy\\Wc\\Exchange1c\\Includes\\": "includes/"
+    },
+    "files": [
+      "admin/loader.php",
+      "includes/filters.php",
+      "includes/actions.php"
+    ]
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "monolog/monolog": "1.25.3",
+    "ramsey/array_column": "1.1"
+  }
+}

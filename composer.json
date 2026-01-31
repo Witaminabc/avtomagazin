@@ -1,0 +1,72 @@
+{
+  "name": "automagaz/wordpress",
+  "description": "WordPress сайт с управлением плагинами через Composer",
+  "type": "project",
+  "license": "proprietary",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "johnpbloch/wordpress": "^6.0",
+
+    "wpackagist-plugin/woocommerce": "^7.5",
+
+    "wpackagist-plugin/woocommerce-gateway-paypal-express-checkout": "^2.1",
+
+
+    "wpackagist-plugin/facebook-for-woocommerce": "^3.0",
+    "wpackagist-plugin/mailchimp-for-woocommerce": "^2.8",
+
+    "wpackagist-plugin/akismet": "^5.1",
+    "wpackagist-plugin/classic-editor": "^1.6",
+    "wpackagist-plugin/redis-cache": "^2.4",
+
+    "wpackagist-plugin/autoptimize": "^3.1",
+    "wpackagist-plugin/wp-smushit": "^3.12",
+    "wpackagist-plugin/wp-super-cache": "^1.9",
+
+    "wpackagist-plugin/bulk-delete": "^6.0",
+    "wpackagist-plugin/duplicate-post": "^4.5",
+    "wpackagist-plugin/members": "^3.2",
+    "wpackagist-plugin/wpfront-user-role-editor": "^3.2",
+
+    "wpackagist-plugin/custom-post-type-maker": "^1.2",
+    "wpackagist-plugin/wp-staging": "^4.0",
+
+    "wpackagist-plugin/true-lazy-analytics": "^2.3",
+
+    "wpackagist-plugin/kaya-qr-code-generator": "^1.5",
+    "wpackagist-plugin/wp-qr-code-generator": "^1.6",
+
+    "wpackagist-plugin/jetpack": "^12.1"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "johnpbloch/wordpress-core-installer": true
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "cp -n wp-config-sample.php wp-config.php || true"
+    ],
+    "post-update-cmd": [
+      "wp core update-db --path=wp"
+    ]
+  }
+}

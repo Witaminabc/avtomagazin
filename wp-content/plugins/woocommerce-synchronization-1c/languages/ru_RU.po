@@ -1,0 +1,783 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce 1C\n"
+"POT-Creation-Date: 2020-03-24 13:13+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: esc_html__;esc_html_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: includes\n"
+"X-Poedit-SearchPath-1: admin\n"
+"X-Poedit-SearchPath-2: exchange-process\n"
+"X-Poedit-SearchPath-3: woocommerce-synchronization-1c.php\n"
+
+#: admin/MetaBox.php:31
+msgid "1C ID"
+msgstr "Ид 1C"
+
+#: admin/ProductCatTableColumn.php:30
+msgid "1C"
+msgstr ""
+
+#: admin/SettingsPage.php:41 admin/SettingsPage.php:42
+#: admin/SettingsPage.php:1133 admin/SettingsPage.php:1146
+msgid "1C Data Exchange"
+msgstr "1C Обмен данными"
+
+#: admin/SettingsPage.php:74
+msgid "Settings have been saved."
+msgstr "Настройки сохранены."
+
+#: admin/SettingsPage.php:97
+msgid "Sync settings with 1C"
+msgstr "Настройки синхронизации с 1С"
+
+#: admin/SettingsPage.php:101
+msgid "Plugin documentation: "
+msgstr "Документация плагина:"
+
+#: admin/SettingsPage.php:103
+msgid "open"
+msgstr "открыть"
+
+#: admin/SettingsPage.php:104
+msgid "Or open the folder `documentation` in the plugin and open index.html"
+msgstr "Или откройте папку `documentation` в плагине и откройте index.html"
+
+#: admin/SettingsPage.php:116
+msgid "Additionally"
+msgstr "Дополнительно"
+
+#: admin/SettingsPage.php:122
+msgid "Enable exchange"
+msgstr "Включить обмен"
+
+#: admin/SettingsPage.php:124
+msgid "If disabled, no exchange will be possible."
+msgstr "Если отключено, то обмен невозможен."
+
+#: admin/SettingsPage.php:135
+msgid "Product / Image Owner"
+msgstr "Владелец товаров/изображений"
+
+#: admin/SettingsPage.php:153
+msgid "File part size:"
+msgstr "Размер части файла:"
+
+#: admin/SettingsPage.php:156
+msgid ""
+"The maximum size of the part of the exchange files transmitted from 1C (in "
+"bytes)."
+msgstr ""
+"Максимальный размер части файлов обмена, передаваемых из 1С (в байтах)."
+
+#: admin/SettingsPage.php:169
+msgid "Script running time (second):"
+msgstr "Время работы скрипта (сек):"
+
+#: admin/SettingsPage.php:172
+msgid "Maximum time the sync script runs (in seconds)."
+msgstr "Максимальное время работы скрипта синхронизации (в секундах)"
+
+#: admin/SettingsPage.php:185
+msgid "Exchange in the archive"
+msgstr "Обмен в архиве"
+
+#: admin/SettingsPage.php:187
+msgid "If enabled, the exchange takes place through a zip archive."
+msgstr "Если включено, то обмен происходит через zip архив."
+
+#: admin/SettingsPage.php:199
+msgid "Remove missing products (full unload)"
+msgstr "Удалять отсутствующие товары (полная выгрузка)"
+
+#: admin/SettingsPage.php:201
+msgid ""
+"If enabled, all products that are missing in the unloading will be deleted."
+msgstr ""
+"Если включено, то все товары, которые отсутствуют в выгрузке будут удалены."
+
+#: admin/SettingsPage.php:211
+msgid "Categories for exclusion:"
+msgstr "Категории для исключения:"
+
+#: admin/SettingsPage.php:216
+msgid "Category IDs with a semicolon."
+msgstr "Ид категорий через точку с запятой."
+
+#: admin/SettingsPage.php:223
+msgid ""
+"Set category thumbnails automatically (based on a product with a miniature "
+"in the category)"
+msgstr ""
+"Устанавливать миниатюры категорий автоматически (исходя из товара с "
+"миниатюрой в категории)"
+
+#: admin/SettingsPage.php:237
+msgid "For prices"
+msgstr "Для цен"
+
+#: admin/SettingsPage.php:243
+msgid "Price processing type"
+msgstr "Тип установки цен"
+
+#: admin/SettingsPage.php:248
+msgid "Mode - 1: Only the base price is set (Price Type 1)"
+msgstr "Режим - 1: Устанавливать только базовую цену (Тип цен 1)"
+
+#: admin/SettingsPage.php:252
+msgid ""
+"Mode - 2: The base and sale price are set (Price Type 1 - basic, Price Type "
+"2 - sale)"
+msgstr ""
+"Режим - 2: Устанавливать базовую и распродажную цену (Тип цен 1 - базовая, "
+"Тип цен 2 - распродажная)"
+
+#: admin/SettingsPage.php:257
+msgid ""
+"Mode - 3: Only the base price is set (Price Type 1) and show the price list "
+"in the product page"
+msgstr ""
+"Режим - 3: Устанавливать только базовую цену (Тип цен 1) и показать список "
+"цен на странице товара"
+
+#: admin/SettingsPage.php:262
+msgid ""
+"Mode - 4: Only the base price is set (Price Type 1) and show the price list "
+"in the product page and apply price types depending on the amount in the cart"
+msgstr ""
+"Режим - 4: Устанавливать только базовую цену (Тип цен 1) и показать список "
+"цен на странице товара и применять тип цен в зависимости от суммы корзины."
+
+#: admin/SettingsPage.php:270
+msgid "Choose the rule of working with prices that is convenient for you."
+msgstr "Выберите правило работы с ценами, которое подходит для вас."
+
+#: admin/SettingsPage.php:291
+msgid "Delete sale price (works for - Mode 1)"
+msgstr "Удалить цену распродажи (работает при - Режим 1)"
+
+#: admin/SettingsPage.php:307 admin/SettingsPage.php:336
+msgid "Price Type 1"
+msgstr "Тип цен 1"
+
+#: admin/SettingsPage.php:319 admin/SettingsPage.php:371
+#: admin/SettingsPage.php:421
+msgid "Caption:"
+msgstr "Подпись:"
+
+#: admin/SettingsPage.php:322 admin/SettingsPage.php:374
+#: admin/SettingsPage.php:424
+msgid "Used for mode 3."
+msgstr "Используется в режиме 3."
+
+#: admin/SettingsPage.php:341
+msgid "Price Type Code"
+msgstr "Код типа цен"
+
+#: admin/SettingsPage.php:345
+msgid "Price Type Name"
+msgstr "Название типа цен"
+
+#: admin/SettingsPage.php:353
+msgid "Not chosen"
+msgstr "Не выбрано"
+
+#: admin/SettingsPage.php:359 admin/SettingsPage.php:456
+msgid "Price Type 2"
+msgstr "Тип цен 2"
+
+#: admin/SettingsPage.php:387 admin/SettingsPage.php:437
+msgid "Cart totals:"
+msgstr "Сумма корзины:"
+
+#: admin/SettingsPage.php:390 admin/SettingsPage.php:440
+msgid "Used for mode 4. Use price type if there is more in the cart."
+msgstr ""
+"Используется в режиме 4. Использовать тип цен, если сумма в корзине больше."
+
+#: admin/SettingsPage.php:409
+msgid "Price Type"
+msgstr "Тип цен"
+
+#: admin/SettingsPage.php:461
+msgid "The selection will be available after the first exchange."
+msgstr "Выбор появится после первого обмена."
+
+#: admin/SettingsPage.php:475
+msgid "For products"
+msgstr "Для товаров"
+
+#: admin/SettingsPage.php:479
+msgid "Try to find a product by SKU"
+msgstr "Попытка поиска товара по артикулу"
+
+#: admin/SettingsPage.php:481
+msgid ""
+"If enabled, then the plugin tries to find the product by SKU, if it is not "
+"found by ID from 1C. It may be useful if the site already has products and, "
+"in order not to create everything again, you can make their first link by "
+"SKU."
+msgstr ""
+"Если включено, то плагин пытается найти товар по артикулу, если не нашел по "
+"ИД из 1С, перед созданием нового товара. Может быть полезно, если на сайте "
+"уже есть товары и, чтобы не создавать все снова, то можно сделать их первую "
+"связь по артикулу."
+
+#: admin/SettingsPage.php:489
+msgid "Use full name"
+msgstr "Использовать полное наименование"
+
+#: admin/SettingsPage.php:491
+msgid ""
+"If enabled, the title of the product will be recorded not \"Name\" and "
+"\"Full Name\" of the details of the products."
+msgstr ""
+"Если включено, то в заголовок товара будет записано не \"Наименование\", а "
+"\"Полное Наименование\" из реквизитов товара."
+
+#: admin/SettingsPage.php:498
+msgid "Products with a stock <= 0:"
+msgstr "Товары с остатком <= 0:"
+
+#: admin/SettingsPage.php:501
+msgid "Hide (not available for viewing and ordering)"
+msgstr "Скрывать (недоступно для просмотра и заказа)"
+
+#: admin/SettingsPage.php:505
+msgid "Do not hide and give the opportunity to put in the basket"
+msgstr "Не скрывать и дать возможность положить в корзину"
+
+#: admin/SettingsPage.php:509
+msgid "Do not hide, but do not give the opportunity to put in the basket"
+msgstr "Не скрывать, но не давать возможность положить в корзину"
+
+#: admin/SettingsPage.php:514
+msgid "Only products with a non-empty price can be opened."
+msgstr "Могут быть открыты только товары с непустой ценой."
+
+#: admin/SettingsPage.php:521
+msgid "Write the \"Description\" in a short description of the product."
+msgstr "Записывать \"Описание\" в краткое описание товара."
+
+#: admin/SettingsPage.php:525
+msgid ""
+"If enabled, the product description will be written in a short description "
+"(post_excerpt)."
+msgstr ""
+"Если включено, то описание товара будет записано в краткое описание "
+"(post_excerpt)."
+
+#: admin/SettingsPage.php:533
+msgid "Use for the main description \"Description file for the site\""
+msgstr "Использовать для основного описания \"Файл описания для сайта\""
+
+#: admin/SettingsPage.php:537
+msgid ""
+"If it is included, then the description of the product will be recorded not "
+"in the \"Description\", but in the \"Description in HTML format\" from the "
+"details of the product, if any, while the data from the \"Description\" will "
+"be recorded in a excerpt description of the product."
+msgstr ""
+"Если включено, то в описание товара будет записано не \"Описание\", а "
+"\"ОписаниеВФорматеHTML\" из реквизитов товара, если есть, при этом данные из "
+"\"Описание\" будут записаны в краткое описание товара."
+
+#: admin/SettingsPage.php:547
+msgid "Extra control over image changes"
+msgstr "Дополнительный контроль изменения изображений"
+
+#: admin/SettingsPage.php:551
+msgid ""
+"Turn this option on if you notice that changing the image in 1C does not "
+"lead to a change on the site. This can occur in a number of configurations "
+"in which the file name does not change when the image is changed."
+msgstr ""
+"Включите этот параметр, если вы заметили, что смена изображения в 1С не "
+"приводит к изменению на сайте. Это может происходить в ряде конфигураций, в "
+"которых при смене изображения не изменяется имя файла."
+
+#: admin/SettingsPage.php:559
+msgid "Get product sku from:"
+msgstr "Получать артикул из:"
+
+#: admin/SettingsPage.php:562
+msgid "SKU"
+msgstr "Артикула"
+
+#: admin/SettingsPage.php:566
+msgid "Requisite value \"Code\""
+msgstr "Значения реквизита \"Код\""
+
+#: admin/SettingsPage.php:570
+msgid "Code"
+msgstr "Кода"
+
+#: admin/SettingsPage.php:575
+msgid "Indicate from which value the article number should be written."
+msgstr "Укажите, из какого значения должен записываться артикул товара."
+
+#: admin/SettingsPage.php:582
+msgid "Skipping / excluding data"
+msgstr "Пропуск / исключение данных"
+
+#: admin/SettingsPage.php:587
+msgid "Skip products without photo"
+msgstr "Пропускать товары без фото"
+
+#: admin/SettingsPage.php:591
+msgid "If enabled, then products without photos will not be added to the site."
+msgstr "Если включено, то товары без фото не будут добавлены на сайт."
+
+#: admin/SettingsPage.php:598
+msgid "Skip product description"
+msgstr "Пропустить описание товара"
+
+#: admin/SettingsPage.php:602
+msgid "If enabled, description and except will not be writed or modified."
+msgstr ""
+"Если включено, то описание и краткое описание не будут записаны или изменены."
+
+#: admin/SettingsPage.php:609
+msgid "Do not update product title"
+msgstr "Не обновлять заголовок товара"
+
+#: admin/SettingsPage.php:613
+msgid ""
+"If enabled, the product title will be writed when the product is created and "
+"will no longer be changed according to the upload data."
+msgstr ""
+"Если включено, то заголовок товара будет записан при создании товара и "
+"больше не будет изменяться по данным выгрузки."
+
+#: admin/SettingsPage.php:621
+msgid "Do not update product images"
+msgstr "Не обновлять изображения товара"
+
+#: admin/SettingsPage.php:625
+msgid ""
+"If enabled, the product images will be writed when the product is created "
+"(if there is) and will no longer be changed according to the upload data."
+msgstr ""
+"Если включено, то изображения товара будут записаны при создании товара "
+"(если есть) и больше не будут изменяться по данным выгрузки."
+
+#: admin/SettingsPage.php:633
+msgid "Do not update product attributes"
+msgstr "Не обновлять атрибуты товара"
+
+#: admin/SettingsPage.php:637
+msgid ""
+"If enabled, the product attributes will be writed when the product is "
+"created and will no longer be changed according to the upload data."
+msgstr ""
+"Если включено, то атрибуты товара будут записаны при создании товара и "
+"больше не будут изменяться по данным выгрузки."
+
+#: admin/SettingsPage.php:645
+msgid "Do not process groups"
+msgstr "Не обрабатывать группы"
+
+#: admin/SettingsPage.php:649
+msgid ""
+"If enabled, then categories on the site will not be created / updated based "
+"on data about groups from 1C, and the category will not be assigned / "
+"changed to products."
+msgstr ""
+"Если включено, то категории на сайте не будут создаваться/обновляться на "
+"основании данных о группах из 1С, а также товарам не будет назначена/"
+"изменена категория."
+
+#: admin/SettingsPage.php:658
+msgid "Exchange orders with 1C"
+msgstr "Обмен заказами с 1С"
+
+#: admin/SettingsPage.php:662
+msgid "Upload orders"
+msgstr "Выгружать заказы"
+
+#: admin/SettingsPage.php:664
+msgid ""
+"If enabled, when exchanging with 1C, the site gives all changed and new "
+"orders since the last synchronization."
+msgstr ""
+"Если включено, то при обмене с 1С сайт отдает все измененные и новые заказы "
+"с момента последней синхронизации."
+
+#: admin/SettingsPage.php:671
+msgid "Response encoding:"
+msgstr "Кодировка ответа:"
+
+#: admin/SettingsPage.php:674
+msgid "UTF-8"
+msgstr "UTF-8"
+
+#: admin/SettingsPage.php:678
+msgid "CP1251 (windows-1251)"
+msgstr "CP1251 (windows-1251)"
+
+#: admin/SettingsPage.php:683
+msgid ""
+"If you have a problem with receiving orders and in 1C you see an error like "
+"\"Failed to read XML\", try changing the encoding."
+msgstr ""
+"Если у вас возникает проблема с получением заказов и в 1С вы видите ошибку "
+"вида \"Не удалось прочитать XML\", попробуйте изменить кодировку."
+
+#: admin/SettingsPage.php:689
+msgid "Date / time of last request:"
+msgstr "Дата/время последнего запроса:"
+
+#: admin/SettingsPage.php:692
+msgid ""
+"At the next request for loading orders, which will come from 1C, the plugin "
+"will unload new / changed orders starting from this date / time."
+msgstr ""
+"При следующем запросе на загрузку заказов, который поступит из 1С, плагин "
+"выгрузит новые/измененные заказы начиная с этой даты/времени."
+
+#: admin/SettingsPage.php:700
+msgid "For debugging"
+msgstr "Для отладки"
+
+#: admin/SettingsPage.php:704
+msgid "Show code 1C"
+msgstr "Показать код 1С"
+
+#: admin/SettingsPage.php:706
+msgid ""
+"If enabled, the metabox with the code will appear in the admin panel, as "
+"well as when viewing the list - the code will be displayed under the product "
+"name."
+msgstr ""
+"Если включено, то в админке у товаров появится метабокс с кодом, а также при "
+"просмотре списка - под названием товара будет отображаться код."
+
+#: admin/SettingsPage.php:713
+msgid "Do not delete files received from 1C"
+msgstr "Не удалять файлы полученные от 1С"
+
+#: admin/SettingsPage.php:715
+msgid ""
+"It may be useful during debugging to analyze the contents of the received "
+"XML files."
+msgstr ""
+"Может быть полезно при отладке, чтобы провести анализ содержимого полученных "
+"XML файлов."
+
+#: admin/SettingsPage.php:722
+msgid "Force update products"
+msgstr "Принудительно обновлять продукты"
+
+#: admin/SettingsPage.php:724
+msgid ""
+"Ignore the control of product changes by hash of the contents and update "
+"anyway. It may be useful, for example, if you made changes in the "
+"administrative panel, and not in 1C, and now you want to overwrite the data."
+msgstr ""
+"Игнорировать контроль изменений продуктов по хешу от содержимого и обновлять "
+"в любом случае. Может быть полезно, например, если вы внесли изменения в "
+"административной панели, а не в 1С, а теперь хотите перезаписать данные."
+
+#: admin/SettingsPage.php:732
+msgid "Clean up missing product variations"
+msgstr "Почистить отсутствующие вариации товаров"
+
+#: admin/SettingsPage.php:734
+msgid ""
+"If enabled, then all variations of goods that are not in the unloading will "
+"be deleted. Be careful and use it only with a full exchange!"
+msgstr ""
+"Если включено, то вариации товаров, которые отсутствуют в выгрузке - будут "
+"удалены (только у товаров, которые есть в выгрузке). Будьте аккуратны и "
+"используйте это только при полном обмене!"
+
+#: admin/SettingsPage.php:750
+msgid "Exchange logging"
+msgstr "Логирование обмена"
+
+#: admin/SettingsPage.php:755
+msgid ""
+"Logs of exchange with 1C are recorded in this directory. If it is not "
+"available for writing and reading, then logging will not work."
+msgstr ""
+"В этот каталог записываются логи обмена. Если он недоступен для записи и "
+"чтения, то логирование работать не будет."
+
+#: admin/SettingsPage.php:771
+msgid "Store for:"
+msgstr "Хранить за:"
+
+#: admin/SettingsPage.php:775
+msgid "days"
+msgstr "дней"
+
+#: admin/SettingsPage.php:777
+msgid "Logs older will be deleted when exchanging."
+msgstr "Логи старше будут удаляться при обмене."
+
+#: admin/SettingsPage.php:784
+msgid "Enable logging"
+msgstr "Включить логирование"
+
+#: admin/SettingsPage.php:786
+msgid ""
+"If enabled, when exchanging from 1C, logs of the exchange protocol are "
+"recorded."
+msgstr ""
+"Если включено, то при обмене с 1С происходит запись логов протокола обмена."
+
+#: admin/SettingsPage.php:797
+msgid "Enable change logging"
+msgstr "Включить логирование изменений"
+
+#: admin/SettingsPage.php:799
+msgid ""
+"If enabled, then when exchanging from 1C, logs of changes of objects are "
+"recorded."
+msgstr ""
+"Если включено, то при обмене с 1С происходит запись логов изменения объектов."
+
+#: admin/SettingsPage.php:816
+msgid "Save settings"
+msgstr "Сохранить настройки"
+
+#: admin/SettingsPage.php:878
+msgid "License verification"
+msgstr "Проверка лицензии"
+
+#: admin/SettingsPage.php:881
+msgid "verified"
+msgstr "проверен"
+
+#: admin/SettingsPage.php:885
+msgid "please verify your purchase code"
+msgstr "пожалуйста, укажите код покупки"
+
+#: admin/SettingsPage.php:894
+msgid "Purchase code"
+msgstr "Код покупки"
+
+#: admin/SettingsPage.php:912
+msgid "Where Is My Purchase Code?"
+msgstr "Где найти код покупки?"
+
+#: admin/SettingsPage.php:921
+msgid "Verify"
+msgstr "Активировать"
+
+#: admin/SettingsPage.php:926
+msgid "Unverify"
+msgstr "Деактивировать"
+
+#: admin/SettingsPage.php:1048
+msgid "Temporary directory for exchange with 1C"
+msgstr "Временный каталог для обмена с 1С"
+
+#: admin/SettingsPage.php:1062
+msgid ""
+"Files received from 1C during the exchange are loaded into this directory if "
+"it is not available for write and read, sharing will be impossible."
+msgstr ""
+"В этот каталог загружаются файлы полученные от 1С при обмене, если он "
+"недоступен для записи и чтения, то обмен будет невозможен."
+
+#: admin/SettingsPage.php:1075
+msgid "Settings for authorization 1C"
+msgstr "Настройки для авторизации 1С"
+
+#: admin/SettingsPage.php:1079
+msgid "Use these details when setting up an exchange node in 1C."
+msgstr "Используйте эти реквизиты при настройке узла обмена в 1С."
+
+#: admin/SettingsPage.php:1085
+msgid "Sync Script Address:"
+msgstr "Адрес скрипта синхронизации:"
+
+#: admin/SettingsPage.php:1098
+msgid "User:"
+msgstr "Пользователь:"
+
+#: admin/SettingsPage.php:1111
+msgid "Password:"
+msgstr "Пароль:"
+
+#: admin/SettingsPage.php:1135
+msgid ""
+"There is no extension \"php-xml\", without it, the exchange will not work. "
+"Please install / activate the extension."
+msgstr ""
+"Отсутствует расширение \"php-xml\", без него обмен не будет работать. "
+"Пожалуйста, установите/активируйте расширение."
+
+#: admin/SettingsPage.php:1148
+msgid ""
+"There is no extension \"php-zip\", so the exchange in the archive will not "
+"work. Please install / activate the extension."
+msgstr ""
+"Отсутствует расширение \"php-zip\", без него обмен в архиве не работает. "
+"Пожалуйста, установите/активируйте расширение."
+
+#: exchange-process/CatalogProcessStarter.php:51
+#: exchange-process/CatalogProcessStarter.php:53
+msgid "Archive unpacked"
+msgstr "Архив распакован"
+
+#: exchange-process/CatalogProcessStarter.php:120
+#: exchange-process/CatalogProcessStarter.php:123
+msgid "Processing groups"
+msgstr "Обработка групп"
+
+#: exchange-process/CatalogProcessStarter.php:140
+#: exchange-process/CatalogProcessStarter.php:143
+msgid "Reading file"
+msgstr "Чтение файла"
+
+#: exchange-process/CatalogProcessStarter.php:171
+#: exchange-process/CatalogProcessStarter.php:180
+msgid "Import file"
+msgstr "Импорт файла"
+
+#: exchange-process/CatalogProcessStarter.php:175
+#: exchange-process/CatalogProcessStarter.php:184
+msgid "completed!"
+msgstr "завершен!"
+
+#: exchange-process/CatalogProcessStarter.php:219
+#: exchange-process/CatalogProcessStarter.php:222
+#: exchange-process/SaleProcessStarter.php:50
+#: exchange-process/SaleProcessStarter.php:53
+msgid "Initialization Error!"
+msgstr "Ошибка инициализации!"
+
+#: exchange-process/CatalogProcessStarter.php:275
+#: exchange-process/CatalogProcessStarter.php:281
+#: exchange-process/SaleProcessStarter.php:394
+#: exchange-process/SaleProcessStarter.php:400
+msgid "The directory / file is not writable"
+msgstr "Каталог/файл недоступен для записи"
+
+#: exchange-process/CatalogProcessStarter.php:298
+#: exchange-process/CatalogProcessStarter.php:301
+#: exchange-process/SaleProcessStarter.php:413
+#: exchange-process/SaleProcessStarter.php:416
+msgid "Error writing file!"
+msgstr "Ошибка записи файла!"
+
+#: exchange-process/CatalogProcessStarter.php:306
+#: exchange-process/CatalogProcessStarter.php:310
+#: exchange-process/SaleProcessStarter.php:421
+#: exchange-process/SaleProcessStarter.php:425
+msgid "Error reading http stream!"
+msgstr "Ошибка чтения http потока!"
+
+#: exchange-process/CatalogProcessStarter.php:318
+#: exchange-process/CatalogProcessStarter.php:319
+msgid "Package complete!"
+msgstr "Пакет обработан!"
+
+#: exchange-process/CatalogProcessStarter.php:351
+#: exchange-process/CatalogProcessStarter.php:352
+msgid "Task deactivate registered!"
+msgstr "Задача на деактивацию зарегистрирована!"
+
+#: exchange-process/RootProcessStarter.php:91
+#: exchange-process/RootProcessStarter.php:97
+msgid "Error! Synchronization is prohibited!"
+msgstr "Ошибка! Синхронизация запрещена!"
+
+#: exchange-process/RootProcessStarter.php:118
+#: exchange-process/RootProcessStarter.php:122
+msgid "Error! Empty login or password! Maybe not configured php-fpm."
+msgstr ""
+
+#: exchange-process/RootProcessStarter.php:133
+#: exchange-process/RootProcessStarter.php:137
+msgid "Error! Wrong login or password!"
+msgstr "Ошибка! Неверный логин или пароль!"
+
+#: includes/Bootstrap.php:87
+msgid ""
+"To run the plug-in, you must first install and activate the WooCommerce "
+"plugin."
+msgstr ""
+"Для работы плагина сначала необходимо установить и активировать плагин "
+"Woocommerce."
+
+#: includes/Bootstrap.php:91
+msgid "Error while activating the WooCommerce - 1C:Enterprise - Data Exchange"
+msgstr "Ошибка при активации WooCommerce - 1C: Предприятие - Обмен данными"
+
+#: includes/Helper.php:315
+msgid "Failed open archive "
+msgstr ""
+
+#: includes/Helper.php:323
+msgid "Failed extract archive "
+msgstr ""
+
+#: includes/Helper.php:331
+msgid "Failed close archive "
+msgstr ""
+
+#: includes/Helper.php:348
+msgid "Exists, but is not available for writing. Change permissions."
+msgstr "Существует, но недоступен для записи. Измените права."
+
+#: includes/Helper.php:355
+msgid "Created and available for writing."
+msgstr "Создан и доступен для записи."
+
+#: includes/Helper.php:360
+msgid "Not exist and unavailable for writing.."
+msgstr "Не существует и недоступен для записи."
+
+#: includes/Helper.php:366
+msgid "Exists and available for writing."
+msgstr "Существует и доступен для записи."
+
+#~ msgid "Delete sale price (works for - Only the base price is set)"
+#~ msgstr ""
+#~ "Удалить цену распродажи (работает при - Устанавливать только базовую цену)"
+
+#~ msgid "Only the base price is set (Price Type 1)"
+#~ msgstr "Устанавливать только базовую цену (Тип цен 1)"
+
+#~ msgid ""
+#~ "The base and sale price are set (Price Type 1 - basic, Price Type 2 - "
+#~ "sale)"
+#~ msgstr ""
+#~ "Устанавливать базовую и распродажную цену (Тип цен 1 - базовая, Тип цен 2 "
+#~ "- распродажная)"
+
+#~ msgid "Price Type:"
+#~ msgstr "Тип цен:"
+
+#~ msgid ""
+#~ "Type of prices in 1C, which will be used as the value of the products."
+#~ msgstr "Тип цен в 1С который будет использоваться как стоимость товара."
+
+#~ msgid "Use only specified price type"
+#~ msgstr "Использовать только указанный тип цен"
+
+#~ msgid ""
+#~ "If it is enabled, then at the same time, if there is no such type of "
+#~ "prices in the offer, then the product remains with an empty price."
+#~ msgstr ""
+#~ "Если включено, то при этом, если в предложении нет такого типа цен, то "
+#~ "товар остается с пустой ценой."
+
+#~ msgid ""
+#~ "If enabled, the product description will be written in a short "
+#~ "description (post_excerpt), instead of the main one (post_content)."
+#~ msgstr ""
+#~ "Если включено, то описание товара будет записано в краткое описание "
+#~ "(post_excerpt)."

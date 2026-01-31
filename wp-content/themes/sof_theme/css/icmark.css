@@ -1,0 +1,251 @@
+/*
+    develop by icmark.ru 2021
+    (c) vafonin@icmark.ru
+ */
+
+body {
+    transition: all 300ms ease-in-out 0ms;
+}
+body.page-load {
+    opacity: 0.6;
+    pointer-events: none;
+    filter: blur(1px);
+}
+/*
+    Страница Аккаунта
+ */
+.account-tab-list .account-tab {
+    display: none !important;
+}
+.account-tab-list .account-tab.active {
+    display: block !important;
+}
+#accountPickupMap {
+    width: 700px;
+    height: 600px;
+    margin-bottom: 15px;
+}
+.account-pickup.all-table table {
+    width: 100%;
+}
+.all-table table.full-width {
+    width: 100%;
+}
+.user-form-1 {
+    padding: 15px;
+
+}
+.profile.user-form-1 {
+    padding: 0 15px 15px;
+}
+.user-form-1 form {
+    margin-top: 0;
+    margin-right: 4px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 0 22px 2px rgb(44 44 44 / 11%);
+    display: flex;
+    flex-direction: column;
+}
+.account-orders-item {
+    margin: 30px 0;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 0 22px 2px rgb(44 44 44 / 11%);
+}
+.account-orders-item h5 {
+    padding: 0;
+    color: #1e1e1e;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+    width: 100%;
+    display: block;
+}
+.account-orders-item .account-orders-item-btn {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.account-orders-item .account-orders-item-btn button {
+    outline: none;
+    transition: 1s;
+    display: inline-block;
+    color: #e13646;
+    font-size: 14px;
+    font-weight: 700;
+    background: #ffffff;
+    border-radius: 23px;
+    border: 1px solid #e13646;
+    padding: 16px 41px;
+    width: 243px;
+}
+.account-orders-item .account-orders-item-btn button:hover {
+    color: #ffffff;
+    background: #e13646;
+}
+.user-form-1 form h5 {
+    padding: 0;
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.user-form-1 form input:first-of-type {
+    margin-bottom: 30px;
+}
+.user-form-1 form label {
+    width: 100%;
+}
+.user-form-1 form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #acb4c3;
+    width: 100%;
+}
+.user-form-1 form input.datepicker-here {
+    cursor: pointer;
+}
+.user-form-1 form select {
+    margin-bottom: 30px;
+}
+.user-form-1 form button {
+    outline: none;
+    transition: 1s;
+    display: inline-block;
+    color: #e13646;
+    font-size: 14px;
+    font-weight: 700;
+    background: #ffffff;
+    border-radius: 23px;
+    border: 1px solid #e13646;
+    padding: 16px 41px;
+    width: 243px;
+}
+.user-form-1 form button:hover {
+    color: #ffffff;
+    background: #e13646;
+}
+.user-form-1 form .form-error {
+    color: red;
+    width: fit-content;
+    margin: 5px 0;
+}
+.dd-options {
+    max-height: 400px;
+}
+.pickup .adress .pickup-link:first-of-type {
+    margin-top: 16px;
+}
+.pickup .adress .pickup-link {
+    display: block;
+    flex-basis: 100%;
+    margin-bottom: 16px;
+}
+#pickup .dd-select .dd-selected-text {
+    white-space: nowrap;
+    max-width: 85%;
+    overflow: hidden;
+}
+#pickup {
+    width: 100% !important;
+    margin: 10px 0 0;
+}
+#pickup .dd-select,
+#pickup .dd-options {
+    width: 100% !important;
+}
+#basket-map {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    max-width: 1240px;
+    height: 349px;
+}
+.deliveryMapChoicePoint {
+    transition: 150ms;
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    background: #e13646;
+    border-radius: 25px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    margin: 10px auto;
+    width: fit-content;
+}
+.deliveryMapChoicePoint:hover {
+    border: 1px solid #e13646;
+    background-color: #ffffff;
+    color: #e13646;
+}
+#next-first-step.not_available_button {
+    opacity: 0.6;
+    pointer-events: none;
+}
+.one-product-basket .product-error {
+    position: absolute;
+    bottom: 1px;
+    left: 144px;
+}
+.one-product-basket .product-error p {
+    color: red;
+}
+.one-product-basket {
+    position: relative;
+}
+#order-detail.mainPop-up {
+    max-width: 70%;
+    max-height: 70%;
+    overflow-y: auto;
+}
+#order-detail table {
+    width: 90%;
+    margin: 0 auto;
+}
+#order-detail > h3 {
+    text-align: center;
+    position: sticky;
+    top: 10px;
+    background: white;
+    box-shadow: 0 0 22px 2px rgb(44 44 44 / 11%);
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto 30px;
+}
+#account-tab .profile {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+}
+#account-tab .part {
+    max-width: 48%;
+    margin: 0 0 10px 0;
+    justify-content: space-between;
+}
+#account-tab form select,
+#account-tab form input {
+    width: 100%;
+}
+#next-first-step {
+    width: auto;
+}
+#my-manager-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.my-manager-item {
+    width: 45%;
+    padding: 15px;
+    box-shadow: 0 0 22px 2px rgb(44 44 44 / 11%);
+    margin-bottom: 20px;
+}
+.my-manager-item span {
+    font-weight: bold;
+}

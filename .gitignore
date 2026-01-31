@@ -1,0 +1,101 @@
+# WordPress core (уже должен быть в системе)
+/wp-admin/
+/wp-includes/
+/wp-content/languages/
+/wp-content/upgrade/
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/backups/
+
+# установочные дупликотора и картинки брендов
+/dup-installer/*
+/wp-markimage-jpg/*
+/wp-markimage-png/*
+
+# Плагины (управляются через Composer) - ИГНОРИРУЕМ ВСЁ
+/wp-content/plugins/*
+
+# ИСКЛЮЧЕНИЯ: плагины, которых нет в WPackagist (храним в репозитории)
+!/wp-content/plugins/index.php
+
+# WooCommerce Ajax Filters (коммерческий)
+!/wp-content/plugins/woocommerce-ajax-filters
+
+# Advanced Custom Fields Pro (проприетарный)
+!/wp-content/plugins/advanced-custom-fields-pro
+
+# Duplicator (бесплатный, но не в WPackagist)
+!/wp-content/plugins/duplicator
+
+# Profile Extra Fields (не найден в репозитории)
+!/wp-content/plugins/profile-extra-fields
+
+# WooCommerce Synchronization 1C (специфичный плагин)
+!/wp-content/plugins/woocommerce-synchronization-1c
+
+# WooCommerce Remove All Products (не найден в репозитории)
+!/wp-content/plugins/woocommerce-remove-all-products
+
+!/wp-content/plugins/woocommerce-services
+
+!/wp-content/plugins/woocommerce-admin
+
+
+
+# Файлы WordPress
+/.htaccess
+/wp-config.php
+/sitemap.xml
+/sitemap.xml.gz
+/robots.txt
+/favicon.ico
+/license.txt
+/readme.html
+
+# Служебные файлы и логи
+/*.log
+/error_log
+/debug.log
+/.user.ini
+
+# Файлы операционных систем
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Composer
+/vendor/
+/composer.lock
+
+# Node.js
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+
+# Среда разработки
+/.env
+/.env.local
+/.env.*.local
+
+# Системные файлы
+/temp/
+/tmp/
+
+# Документация
+/CHANGELOG.md
+/CONTRIBUTING.md
+/README.md
+
+# WooCommerce специфичные файлы
+/wp-content/uploads/woocommerce_uploads/
+/wp-content/uploads/wc-logs/
